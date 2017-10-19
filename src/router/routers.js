@@ -1,7 +1,6 @@
 
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
 //首页
 import main from ".././components/content/main/mainPage.vue"
 //教程推荐
@@ -21,13 +20,13 @@ const routes = [
   {path: '/',  component: main },
   {path: '/course' ,  component: (resolve) => require(['.././components/content/course/coursePage.vue'], resolve),
     children : [
-      { path: '/course/',  component: (resolve) => require(['.././components/content/course/courseMain.vue'], resolve),//course/
+      { path: '/course/',  component: (resolve) => require(['.././components/content/course/courseMain.vue'], resolve),
         children : [
           { path: '/course/',  component: (resolve) => require(['.././components/content/course/courseRecommend.vue'], resolve) },
           { path: '/course/Select',  component: (resolve) => require(['.././components/content/course/courseSelect.vue'], resolve) }
         ]
       },
-      { path: '/course/Content', component: (resolve) => require(['.././components/content/course/courseContent.vue'], resolve) } //懒加载 (resolve) => require(['../components/login'], resolve)
+      { path: '/course/Content', component: (resolve) => require(['.././components/content/course/courseContent.vue'], resolve) }
     ]
   },
   {path: '/chef', component: (resolve) => require(['.././components/content/chef/chefPage.vue'], resolve) },//chef
@@ -51,19 +50,4 @@ const router = new VueRouter({
 
 export {router,routes};
 
-// //  判断是否需要登录权限 以及是否登录
-// router.beforeEach((to, from, next) => {
-//   if (to.matched.some(res => res.meta.requireAuth)) {// 判断是否需要登录权限
-//     if (localStorage.getItem('token')) {// 判断是否登录
-//       next();
-//     } else {// 没登录则跳转到登录界面
-//       next({
-//         path: '/Register',
-//         query: {redirect: to.fullPath}  //使用query 接收参数this.$route.query.num
-//       })
-//     }
-//   } else {
-//     next()
-//   }
-// });
 
