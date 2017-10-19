@@ -2,7 +2,6 @@
 import Vue from 'vue'
 import app from './app.vue'
 import axios from 'axios'
-//import axios from './router/http'
 import VueAxios from 'vue-axios'
 
 axios.defaults.withCredentials = true;
@@ -36,7 +35,6 @@ axios.interceptors.response.use(data => {
 Vue.use(VueAxios, axios)
 
 // 全局的引用
-// import ElementUI from 'element-ui'
 import ElCol from 'element-ui/lib/col'
 import ElRow from 'element-ui/lib/row'
 import { Message } from 'element-ui';
@@ -52,7 +50,6 @@ import 'animate.css/animate.min.css'
 //引入moment.js
 import moment from 'moment'
 Object.defineProperty(Vue.prototype, '$moment', { value: moment });
-//console.log(this.$moment('201708011630','YYYYMMDDHmm').fromNow()); 返回差值
 
 //添加全局函数
 Vue.prototype.toSelect = function (id){
