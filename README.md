@@ -1,7 +1,7 @@
 # 说明
-此应用采用前后端分离 , [后端代码在这](https://github.com/SeaBiscuit-Z/cookServer "asp.net webapi") , 这是 [上线地址](http://47.94.224.249/)
+[后端代码在这](https://github.com/SeaBiscuit-Z/cookServer "asp.net webapi") , 这是 [上线地址](http://47.94.224.249/)
 
-响应式 在线厨艺教学网站 , pc端访问最优体验
+采用前后端分离的方式开发的 响应式 在线厨艺教学网站 , pc端访问最优体验
 
 # 技术栈:
 
