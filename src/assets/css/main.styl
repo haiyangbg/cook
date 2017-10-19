@@ -1,0 +1,36 @@
+
+
+body
+  margin 0
+  padding 0
+  position relative
+  background #bbb
+a
+  text-decoration none
+
+.textContentAfter
+  &::after
+    content "..."
+    font-weight bold
+    font-size 25px
+    height 30px
+    position absolute
+    bottom 0
+    right 0
+
+transitionTime = 0.4s
+
+.fade-enter-active, .fade-leave-active
+  transition: all transitionTime
+.fade-enter, .fade-leave-to
+  opacity: 0
+
+.clearfix
+  display: inline-block
+  &:after
+    display: block
+    content: "."
+    height: 0
+    line-height: 0
+    clear: both
+    visibility: hidden
