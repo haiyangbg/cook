@@ -20,15 +20,31 @@ vuejs2.0 + vue-router + vue-axios + stylus + webpack  + element-ui + animate.css
 axios.defaults.baseURL = 'http://47.94.224.249:666';  //这是我线上的地址，把此行代码注释
 ```
 
-
+```
 .
 ├── build                                       // webpack配置文件
 ├── config                                      // 项目打包路径
 ├── src                                         // 源码目录
-│   ├── components                              // 组件
+│   ├── assets                                  // 字体svg,css文件和独立js文件
+│   │   ├── css                                 // 字体css文件
+│   │   ├── fonts                               // 字体文件
+│   │   ├── js                                  // 滚动动画js文件
+│   │   └──  logo                                // logo图片
+│   ├── components                              // 处理路由
+│   |   ├── content                             // 内容页面
+│   |   |   ├── chef                            // 
+│   |   |   ├── Course 
+│   |   |   ├── main 
+│   |   |   └──  user 
+│   |   ├── header                              // 页面头部
+│   |   └──  MyComponent                         // 小功能插件
+│   |       ├── backToTop.vue                   // 回到顶部小圆点
+│   |       └──  video.vue                       // H5视频插件
+│   ├── router                                  // 组件
 │   ├── App.vue                                 // 页面入口文件
-│   ├── main.js                                 // 程序入口文件，加载各种公共组件
-├── static
+│   └── main.js                                 // 程序入口文件，加载各种公共组件
+├── static                                      // 静态图片视频资源
 ├── favicon.ico                                 // 图标
-├── index.html                                  // 入口html文件
+└──  index.html                                  // 入口html文件
 .
+```
