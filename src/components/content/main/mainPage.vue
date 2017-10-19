@@ -1,9 +1,9 @@
 <template>
   <div class="mainPage" @wheel.prevent="menuScroll">
     <el-carousel :interval="5000" :height="carourolH+'px'" class="carousel" @change="carouselChange" ref="MyCarousel">
-      <el-carousel-item v-lazy:background-image="imgs[index]" v-for="(item,index) in imgNum" :key="index" class="carousel-item">
+      <el-carousel-item v-lazy:background-image="imgs[index]" v-for="(item,index) in imgNum" :key="index" class="carousel-item" @click="toContent(ImgMsg[index].courseid)">
         <el-tooltip content="点击查看详情" placement="top">
-          <div class="Animate" :class="[PStyle,highL]" @mouseenter="showWrapper" @mouseleave="hideWrapper">
+          <div class="Animate" :class="[PStyle,highL]" @mouseenter="showWrapper" @mouseleave="hideWrapper" @click="toContent(ImgMsg[index].courseid)">
             <h1 class="nameAnimate animated" v-show="nameAnimate" :class="nameAnimate">{{ imgName[index] }}</h1>
             <p class="contentAnimate animated" v-show="contentAnimate" :class="contentAnimate">{{ imgContent[index] }}</p>
           </div>
@@ -58,6 +58,7 @@
         {
           this.imgContent.push(this.ImgMsg[i].content);
         }
+        console.log();
       }).catch((error) => {
         //console.error(error);
       });
