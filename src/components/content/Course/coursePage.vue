@@ -16,7 +16,7 @@
                   <el-option label="糕点" value="糕点"></el-option>
                   <el-option label="黑暗料理" value="黑暗料理"></el-option>
                 </el-select>
-                <el-button slot="append" icon="search" @click="mySelect"></el-button>
+                <el-button slot="append" icon="search" @click="mySelect" ></el-button>
               </el-input>
               <div class="hot">
                 <p class="hotHeader">热搜:</p>
