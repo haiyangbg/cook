@@ -4,13 +4,15 @@ import app from './app.vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
+// 开启axios 发送cookie
 axios.defaults.withCredentials = true;
 
+// 请求路径
 //axios.defaults.baseURL = 'http://localhost:1528';
 axios.defaults.baseURL = 'http://47.94.224.249:666';
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
-
+//axios 拦截器
 axios.defaults.timeout = 5000;
 axios.interceptors.request.use(config => {
   if (localStorage.getItem('token')) {
@@ -66,7 +68,7 @@ Vue.prototype.toUser = function (id){
   this.$router.push({ path : '/back'});
 };
 
-
+// vuex 存储数据
 import Vuex from 'vuex'
 Vue.use(Vuex);
 const store = new Vuex.Store({
@@ -91,6 +93,7 @@ const store = new Vuex.Store({
   }
 });
 
+// 图片懒加载配置
 import VueLazyload from 'vue-lazyload'
 
 Vue.use(VueLazyload, {
@@ -101,7 +104,7 @@ Vue.use(VueLazyload, {
   listenEvents: [ 'scroll' ]
 });
 
-
+// token 验证失败弹出登录框
 Vue.prototype.toLogin = function () {
   this.$router.push({ path : '/' });
   this.$store.state.loginForm = true;
