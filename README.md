@@ -4,7 +4,7 @@
 # 技术栈:
 
 ### 前端
-vue2.0全家桶 + stylus + webpack + [jsonServer](https://github.com/typicode/json-server) + [vueLazyload](https://github.com/hilongjw/vue-lazyload) 
+vuejs2.0 + vue-router + vue-axios + stylus + [jsonServer](https://github.com/typicode/json-server) + [vueLazyload](https://github.com/hilongjw/vue-lazyload) + webpack + element-ui + animate.css
 
 ### 后端
 三层 + asp.net mvc WebApi + cors + sqlServer
