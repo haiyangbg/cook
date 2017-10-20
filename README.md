@@ -14,7 +14,7 @@ vue2.0全家桶 + stylus + webpack  + element-ui + animate.css + [vueLazyload](h
 # 项目运行
 
 ```Javascript
-//main.js 里
+// src / main.js 
 
 //axios.defaults.baseURL = 'http://localhost:1528';   //取消此行代码的注释，将后面的路径改为后端后运行的路径
 axios.defaults.baseURL = 'http://47.94.224.249:666';  //这是我线上的地址，把此行代码注释
