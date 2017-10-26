@@ -11,6 +11,16 @@ vue2.0全家桶 + stylus + webpack  + element-ui + animate.css + [vueLazyload](h
 ### 后端
 三层 + asp.net mvc WebApi + cors + sqlServer
 
+#项目运行截图
+
+首页：pc端
+
+![](https://github.com/SeaBiscuitbyZS/ImageCache/tree/master/cook/首页.jpg) 
+
+
+
+
+
 # 项目运行
 
 ```Javascript
