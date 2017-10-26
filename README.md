@@ -17,13 +17,17 @@ vue2.0全家桶 + stylus + webpack  + element-ui + animate.css + [vueLazyload](h
 
 ![首页](https://raw.githubusercontent.com/SeaBiscuitbyZS/ImageCache/master/cook/home.gif) 
 
-美食推荐：
+美食推荐页面：
 
 ![美食推荐](https://raw.githubusercontent.com/SeaBiscuitbyZS/ImageCache/master/cook/recommend.gif) 
 
-搜索：
+搜索页面：
 
 ![搜索](https://raw.githubusercontent.com/SeaBiscuitbyZS/ImageCache/master/cook/search.gif) 
+
+图文教程 + 视频教程 + 评论功能 + 收藏功能 + 登录验证(token验证)
+
+![教程页面](https://raw.githubusercontent.com/SeaBiscuitbyZS/ImageCache/master/cook/course.gif) 
 
 
 # 项目运行
