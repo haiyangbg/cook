@@ -15,7 +15,7 @@ vue2.0全家桶 + stylus + webpack  + element-ui + animate.css + [vueLazyload](h
 
 首页：pc端
 
-![image](https://raw.githubusercontent.com/SeaBiscuitbyZS/ImageCache/master/cook/home.jpg) 
+![image](https://raw.githubusercontent.com/SeaBiscuitbyZS/ImageCache/master/cook/home.gif) 
 
 
 
