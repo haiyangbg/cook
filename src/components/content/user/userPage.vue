@@ -680,7 +680,11 @@
       setpagebg() {
         this.axios.post('/api/setpagebg', qs.stringify({ "pagebg" : this.dataMsg.pageBg })).then((res)=>{
           //console.log(res.data)
-        }).catch();
+          this.PageDialog = false;
+
+        }).catch(()=>{
+            this.PageDialog = false;
+          });
       },
       setbg() {
         setTimeout(()=>{
@@ -1046,12 +1050,12 @@
       //我关注的点击事件
       hintFollowClick() {
         if(this.id === 0) {
-          this.getFollowMsg(() => {
+          this.getFollowMsg(()=> {
             this.mainTabsValue = this.$store.state.userIndex = '1';
             this.followTabsValue = this.$store.state.userfollow = '0';
           });
         }else {
-          this.getFollowMsgid(() => {
+          this.getFollowMsgid(()=> {
             this.mainTabsValue = this.$store.state.userIndexid = '1';
             this.followTabsValue = this.$store.state.userfollowid = '0';
           });
@@ -1061,12 +1065,12 @@
       //关注我的点击事件
       hintHenchmanClick() {
         if(this.id === 0) {
-          this.getHenchmanMsg(() => {
+          this.getHenchmanMsg(()=> {
             this.mainTabsValue = this.$store.state.userIndex = '1';
             this.followTabsValue = this.$store.state.userfollow = '1';
           });
         }else {
-          this.getHenchmanMsgid(() => {
+          this.getHenchmanMsgid(()=> {
             this.mainTabsValue = this.$store.state.userIndexid = '1';
             this.followTabsValue = this.$store.state.userfollowid = '1';
           });
